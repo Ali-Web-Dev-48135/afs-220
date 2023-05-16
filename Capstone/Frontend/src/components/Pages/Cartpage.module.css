@@ -1,0 +1,80 @@
+.username-container{
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width:25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    z-index: -100;
+}
+
+.cart-items-container 
+.cart-empty-p{
+    font-size: 2rem;
+    padding: 10px 0;
+}
+/* .username-container *{
+    margin-
+} */
+
+.username-container .username-span{
+    font-weight: bold;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.submit-cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: 1px solid black;
+    width: 40rem;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.submit-cart-btn{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    width: 10rem;
+}
+
+
+
+.submit-cart-container span{
+    font-size: 20px;
+}
+
+.submit-cart-btn:hover{
+ background-color: #ffa500;   
+}
+.cart-items-container{
+    width: 70rem;
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    z-index: -100;
+    outline: none;
+}
+
+/*
+.card
+{
+  width: 100%;
+  outline: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/

@@ -1,0 +1,85 @@
+.auth-form {
+  outline: 1px solid black;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  overflow: hidden;
+  background: orange;
+  border-radius: 5px;
+}
+
+.auth-data-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* outline: 1px solid red; */
+  width: 250px;
+  gap: 10px;
+}
+
+.auth-data-container label {
+  font-size: 1.3rem;
+  align-self: flex-start;
+}
+
+.auth-data-input {
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  outline: 2px solid white;
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.auth-data-input:focus {
+  outline: 3px solid green;
+}
+
+/* focused on iput styles  */
+
+.auth-data-input-error {
+  outline: 3px solid red;
+}
+
+.auth-form-confirm-btn {
+  border: none;
+  width: 200px;
+  cursor: pointer;
+  padding: 5px 0;
+  border-radius: 5px;
+  outline: 2px solid white;
+  font-size: 16px;
+  background-color: #ccc;
+  color: black;
+}
+
+.auth-form-confirm-btn:hover {
+  font-weight: bold;
+  background: lightgreen;
+  color: black;
+}
+
+.auth-form-confirm-btn:disabled,
+.auth-form-confirm-btn:disabled:hover,
+.auth-form-confirm-btn:disabled:active {
+  cursor: not-allowed;
+  background-color: coral;
+  color: white;
+}
+
+.auth-form-change-login-mode {
+  display: inline-block;
+  width: 7rem;
+  border-radius: 5px;
+  text-align: center;
+  outline: 2px solid white;
+  color: black;
+  cursor: pointer;
+}

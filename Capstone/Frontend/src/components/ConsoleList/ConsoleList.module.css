@@ -1,0 +1,23 @@
+.console-list-section
+{
+    width: 100%;
+    /*border: 2px solid red;*/
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*margin-top:7rem;*/
+}
+
+.console-list {
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    /*outline: 1px solid black;*/
+    place-items: center;
+
+
+}

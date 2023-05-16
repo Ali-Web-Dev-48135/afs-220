@@ -1,0 +1,14 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 10px;
+	background-color: var(--primary-link-color);
+	border-bottom: 3px solid var(--primary-box-shadow-gray);
+
+}

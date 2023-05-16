@@ -1,0 +1,82 @@
+.cart-item{
+    width: 70%;
+    outline:none;
+    
+    
+}
+
+.cart-item-container{
+    outline:none;
+    flex-direction: row;
+    background-color: #FFA500;
+    padding: 10px 0 0 5px;
+    border-radius: 5px;
+    justify-content: flex-start;
+
+}
+
+.cart-item-img-container{
+    outline: none;
+    width: 150px;
+    padding: 0 0;
+    margin-left: 1rem;
+}
+
+.cart-item-img-container img{
+    max-width: 100%; 
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+    
+    
+}
+
+.cart-item-details-container{
+    justify-content: flex-start;
+    padding: 10px 0;
+    max-width: 80%;
+    padding-left: 10px;
+    outline: none;
+    margin-left: 30px;
+}
+
+.cart-item-details-container span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.cart-item-details-container 
+.cart-item-add,
+.cart-item-details-container .cart-item-subtract{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+/*
+category
+: 
+0
+description
+: 
+"Joel and Ellie team up to save humanity, Ellie not knowing of her special powers and Joel taking Ellie in as his own daughter"
+id
+: 
+1
+imagePath
+: 
+"https://blog.playstation.com/uploads/2022/09/3a7db5addc3dfc10aabc13bbf27cd87139f26646.jpeg"
+productName
+: 
+"Last Of Us"
+productPrice
+: 
+50
+productRating
+: 
+10
+
+
+*/

@@ -1,0 +1,35 @@
+.message-container {
+  background: green;
+  position: absolute;
+  right: 5px;
+  top: 115px;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+  animation: slidein 1.5s forwards;
+  transition: transform 2s ease-in;
+  /* display: none; */
+}
+
+@keyframes slidein {
+  0% {
+    right: -300px;
+  }
+  2% {
+    right: -100px;
+  }
+  3% {
+    right: -50px;
+  }
+  4% {
+    right: 50px;
+  }
+  6% {
+    right: 70px;
+  }
+}
+
+.message-container p {
+  color: white;
+  font-size: 1.2rem;
+}

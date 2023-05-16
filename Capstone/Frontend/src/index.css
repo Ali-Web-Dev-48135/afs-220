@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-link-color: #252627;
+  --primary-white-color: #FFF;
+  --primary-box-shadow-gray: rgb(0 0 0 /18%);
+}
+
+a {
+  text-decoration: none;
+}

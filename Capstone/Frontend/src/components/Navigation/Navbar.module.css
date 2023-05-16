@@ -1,0 +1,58 @@
+.navbar {
+  width: 350px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border: 5px solid transparent;
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.logo-container {
+  width: 7rem;
+  text-align: center;
+}
+
+.logo-container a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.navbar a:hover {
+  border-bottom: 5px solid orange;
+}
+
+a.active,
+a:active,
+a:active:hover {
+  border-bottom: 3px solid orange;
+}
+
+.navbar .navbar-logout-btn {
+  outline: none;
+  width: 3rem;
+  background-color: black;
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.navbar .navbar-logout-btn:hover{
+  border-bottom: 5px solid orange;
+  background-color: black;
+
+}

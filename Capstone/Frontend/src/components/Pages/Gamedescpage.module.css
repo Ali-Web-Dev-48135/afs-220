@@ -1,0 +1,84 @@
+.game-desc-container
+{
+    /* outline: 1px solid darkblue; */
+    box-shadow: 2px 2px 2px darkgrey, -2px -2px 2px darkgrey;
+    border-radius: 5px;
+    outline:none;
+    max-width: 600px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+    
+}
+
+.game-desc-image-container
+{
+    max-width: 350px;
+    outline: none;
+    flex-direction: column;
+}
+
+.game-desc-image-container img
+{
+    max-width: 250px;
+    
+}
+
+.game-desc-detail-container
+{
+    flex-direction: column;
+    gap: 10px;
+    min-height: 300px;
+    justify-content: flex-start;
+    padding: 10px 1rem 0 0;
+    outline: none;
+}
+
+.game-desc-detail-title
+{
+    font-size: 1.8rem;
+    color: darkblue;
+    font-weight: 400;
+}
+
+.game-desc-detail-price
+{
+    font-size: 1.5rem;
+    color: darkblue;
+}
+
+.game-desc-detail-rating
+{
+    font-size: 1.5rem;
+    color:darkblue;
+}
+
+.game-desc-detail-desc
+{
+    /* outline: 1px solid darkblue; */
+    padding: 1rem 0;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: left;
+    line-height: 1.2rem;
+}
+
+.game-desc-btn-container
+{
+    outline: none;
+    flex-direction: column;
+}
+.game-desc-btn
+{
+    width: 10rem;
+    cursor: pointer;
+    background-color: orange;
+}
+.game-desc-btn:hover
+{
+    background-color: green;
+    color: white;
+}
+
+

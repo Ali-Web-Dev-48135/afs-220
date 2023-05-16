@@ -1,0 +1,25 @@
+.avatar-container{
+    /* outline: 4px solid black; */
+    outline: none;
+    flex-direction: column;
+    max-width: 450px;
+    border: none;
+    overflow: hidden;
+    padding: 0 0;
+}
+
+.avatar-image-container{
+    flex-direction: column;
+    /* outline: 5px solid red; */
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.avatar-image-container img{
+    object-fit: contain;
+    max-width: 100%;
+
+}
