@@ -1,14 +1,17 @@
-
-
+const Product = require("../models/product");
 const HttpError = require("../models/http-error");
 
-const mongoose = require("mongoose");
-
+const getAllProducts = async (request, response, next) => {
+  const games = await Product.find();
+  response.json({ games: games });
+};
 const getProductById = async (request, response, next) => {
   const productId = request.params.productId;
+
   let product;
   try {
     // find product in Mongoose Schema (Mongodb db)
+    place = await Product.findById(productId);
   } catch (err) {
     const error = new HttpError(
       "Something went wrong, could not find a place",
@@ -29,7 +32,6 @@ const getProductById = async (request, response, next) => {
 };
 
 
-
-
-
+exports.getAllProducts = getAllProducts;
 exports.getProductById = getProductById;
+

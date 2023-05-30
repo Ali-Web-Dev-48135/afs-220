@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 // const path = require("path"); // Delete later if not in use.
 
 const productRoutes = require("./routes/product-routes");
+const authRoutes = require("./routes/auth-routes")
 const HttpError = require("./models/http-error");
 
 const app = express();
@@ -25,7 +26,9 @@ app.use((request, response, next) => {
   next();
 });
 
-app.use("/api/products", productRoutes); // => /api/places/...
+app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
+
 
 app.use((request, response, next) => {
   const error = new HttpError("Could not find this route", 404);
@@ -46,17 +49,20 @@ app.use((error, request, response, next) => {
   response.json({ message: error.message || "An unknown error occured." });
 });
 
-app.listen(PORT, () => {
-  console.log(`App has started on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`App has started on port ${PORT}`);
+// });
+// MongoDb Credentials
+// super_user_fsw_developer
+// Hasan@3135
 
 // Configure to latest db later.
-// mongoose
-//   .connect(
-//     "mongodb+srv://alialdairawi:Hasan%403135@cluster0.8xuqc.mongodb.net/mern?retryWrites=true&w=majority"
-//   )
-//   .then(() => app.listen(5000))
-//   .then(() => console.log("You are now connected!"))
-//   .catch((error) => {
-//     console.log(error);
-//   });
+mongoose
+  .connect(
+    "mongodb+srv://super_user_fsw_developer:Hasan%403135@cluster0.qdoawaa.mongodb.net/"
+  )
+  .then(() => app.listen(5000))
+  .then(() => console.log("You are now connected!"))
+  .catch((error) => {
+    console.log(error);
+  });

@@ -13,5 +13,3 @@ const productSchema = new Schema({
 
 module.exports = mongoose.model("Product", productSchema);
 
-// Product properties
-// id, Title, Description, price,  image url, category
